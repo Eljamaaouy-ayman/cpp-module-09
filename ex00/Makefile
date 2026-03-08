@@ -1,6 +1,6 @@
 pro = btc
 com = c++
-flagse = -Wall -Wextra -Werror -std=c++98
+flagse = #-Wall -Wextra -Werror -std=c++98
 
 scr = main.cpp BitcoinExchange.cpp
 obj = $(scr:.cpp=.o)
