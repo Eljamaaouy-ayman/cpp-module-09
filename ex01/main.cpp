@@ -27,7 +27,11 @@ int main(int ac, char **av)
                 if (av[1][i] == '-')
                     calc.push(b - a);
                 if (av[1][i] == '/')
+                {
+                    if (a == 0)
+                        return (std::cerr << "Error\n", 0);
                     calc.push(b / a);
+                }
             }
         }
         else if (av[1][i] <= 32)
